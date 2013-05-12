@@ -2,12 +2,12 @@
 
 class Day {
     
-  //  private $date;
     private $day;
     private $isBlank;
     private $isToday;
     
     function __construct($day, $isBlank = false, $isToday = false){
+    
        $this->day = $day;
        $this->isBlank = $isBlank;
        $this->isToday = $isToday;

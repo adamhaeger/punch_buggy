@@ -1,6 +1,5 @@
 <?php
 
-require_once 'week.php';
 require_once 'day.php';
 
 class Month {
@@ -11,14 +10,13 @@ class Month {
     private $today;
     private $year;
     private $days = array();
- //   private $weeks = array();
     
     function __construct($today, $monthNumber, $year) {
         
         $this->monthNumber = $monthNumber;
         $this->year = $year;
         $this->today = $today;
-        $this->monthName = date('F');
+        $this->monthName = date('F', mktime(0, 0, 0, $monthNumber));
         $this->daysInMonth = cal_days_in_month(CAL_GREGORIAN, $monthNumber, $year);
         $this->daysInMonth = Month::setDays($this->daysInMonth, $this->today);
     }
@@ -47,21 +45,6 @@ class Month {
      public function getMonthMumber(){
         return $this->monthNumber;
     }
-    
-    
-    
-
-    public function toString(){
-        var_dump($this->monthNumber);
-        var_dump($this->monthName);
-        var_dump($this->daysInMonth);
-        var_dump($this->weeks);
-    }
-    
-    
-
-    
-    
     
 }
 

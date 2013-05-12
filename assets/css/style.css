@@ -1,0 +1,111 @@
+
+
+html,
+body {
+    height: 100%;
+}
+
+
+
+body { 
+    background: url(../img/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+
+td{
+    border:1px solid #D5D5D5;
+    width:14.28571428571429%; /* 80 / 7 */
+    height:13.33333333333333%;
+}
+
+td p{
+    float: right;
+    color:white;
+    text-transform: capitalize;
+}
+
+td.current{
+
+}
+
+.table{
+    height:80%;
+    background-color: #186160;
+}
+
+tr.highlight{
+    background-color: #FE5E02;
+}
+
+tr.highlight td.blank{
+    background-color: #B15D24;
+}
+
+td.blank{
+    background-color: #0B8987;
+}
+
+h1{
+    text-align: center;
+}
+
+#today{
+    background-color: #FEA25F;
+}
+
+.container{
+    width:80%;
+}
+
+th.headers{
+    color:white;
+    text-transform: capitalize;
+
+}
+
+span.today{
+    color:transparent;
+
+}
+
+span.today:hover{
+    color:white;
+
+}
+
+
+/* Sticky footer styles */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 60px;
+}
+#footer {
+    background-color: black;
+    -moz-opacity: 0.45;
+    opacity: 0.45;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
